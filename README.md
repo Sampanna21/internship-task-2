@@ -20,7 +20,7 @@
 
 - HTML, CSS, Bootstrap 5
 - Handlebars (.hbs)
-- Node.js & Express.js
+- Vite
 
 ---
 
