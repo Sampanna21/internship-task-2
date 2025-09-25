@@ -1,0 +1,75 @@
+{{> header}}
+
+<div class="protozoa-page">
+    <div class="page-bg"></div>
+
+<!-- Hero -->
+  <section class="bg-light text-dark text-center p-5">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Types of Protozoa</h1>
+      <p class="lead">Explore different protozoa and their fascinating roles in ecosystems and health.</p>
+    </div>
+  </section>
+
+  <!-- Cards -->
+  <section class="py-5">
+    <div class="container">
+      <div class="cards-row">
+
+        <div class="col">
+          <div class="card shadow-sm h-100">
+            <img src="https://cdn.mos.cms.futurecdn.net/wmgL4ax5vrV8tn4dBueP2e.jpg" class="card-img-top" alt="Amoeba">
+            <div class="card-body">
+              <h5 class="card-title">Amoeba</h5>
+              <p class="card-text">An amoeba is a type of protozoan, specifically one of the amoeboid protozoans. Protozoa are a large, diverse, and polyphyletic group of single-celled eukaryotes. They are characterized as "animal-like" because they are heterotrophic, meaning they consume other microorganisms or organic matter for food.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100">
+            <img src="https://media.sciencephoto.com/c0/51/12/06/c0511206-800px-wm.jpg" class="card-img-top" alt="Paramecium">
+            <div class="card-body">
+              <h5 class="card-title">Paramecium</h5>
+              <p class="card-text">Paramecium is a genus of single-celled protozoa known for its distinctive slipper-like shape and covering of hair-like cilia. They are common ciliate protozoans found in freshwater environments like ponds, lakes, and streams. Because they are easy to cultivate, paramecia are often used as model organisms in biology classrooms and laboratories to study biological processes.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100">
+            <img src="https://www.news-medical.net/image-handler/picture/2018/9/shutterstock_509084095.jpg" class="card-img-top" alt="Plasmodium">
+            <div class="card-body">
+              <h5 class="card-title">Plasmodium</h5>
+              <p class="card-text">Plasmodium is a genus of parasitic protozoa that causes malaria in humans and other vertebrates. With over 200 known species, its complex lifecycle involves both a mosquito vector and a vertebrate host. Five species are known to cause malaria in humans, with Plasmodium falciparum being the most severe and lethal.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100">
+            <img src="https://www.bioworld.com/ext/resources/BWS/BWS-library/Trypanosoma-cruzi-parasite.webp?height=488&t=1688567895&width=650" class="card-img-top" alt="Trypanosoma">
+            <div class="card-body">
+              <h5 class="card-title">Trypanosoma</h5>
+              <p class="card-text">Trypanosoma is a genus of parasitic, flagellated protozoa that can cause debilitating and fatal diseases in humans and animals. The name comes from the Greek words trypanon (borer) and soma (body), referring to the parasites' characteristic corkscrew-like movement. Their life cycle typically involves two hosts: a blood-sucking insect vector and a mammalian host.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <script>
+    // Animate cards fading from top to bottom
+    window.addEventListener('DOMContentLoaded', () => {
+      const cards = document.querySelectorAll('.card');
+      cards.forEach((card, index) => {
+        setTimeout(() => card.classList.add('animate-down'), index * 200);
+      });
+    });
+  </script>
+
+  {{> footer}}
+

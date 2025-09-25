@@ -1,0 +1,86 @@
+{{> header}}
+
+<div class="bacteria-page">
+  <!-- Background Layer -->
+  <div class="page-bg"></div>
+
+<!-- Hero Section -->
+  <section class="bg-light text-dark text-center p-5">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Types of Bacteria</h1>
+      <p class="lead">Explore some common bacteria and learn how they impact our world.</p>
+    </div>
+  </section>
+
+  <!-- Cards Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="cards-row">
+
+        <!-- Card 1 -->
+        <div class="col">
+          <div class="card shadow-sm h-100">
+            <img src="https://cdn.mos.cms.futurecdn.net/kJjwg4h2ULvghvsHFT62HU.jpg" class="card-img-top" alt="E. coli">
+            <div class="card-body">
+              <h5 class="card-title">E. coli</h5>
+              <p class="card-text">Escherichia coli (E. coli) is a common bacterium found in the intestines of humans and other warm-blooded animals. While most strains are harmless and beneficial for a healthy gut, certain strains can cause serious illness. In severe cases, a life-threatening complication called hemolytic uremic syndrome (HUS) can develop, especially in young children and the elderly. HUS can lead to kidney failure.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col">
+          <div class="card shadow-sm h-100">
+            <img src="https://www.hartmann-science-center.com/-/media/country/hsc/pathogens/haufenkokken-b5_540x540px.jpg?h=540&iar=0&mw=540&w=540&rev=17f12ef327e845179d45a7378778be47&sc_lang=en&hash=9C6F8FD47CAB626DC089E42EA01AA416" class="card-img-top" alt="Staphylococcus aureus">
+            <div class="card-body">
+              <h5 class="card-title">Staphylococcus aureus</h5>
+              <p class="card-text">Staphylococcus aureus (often called "staph") is a type of bacterium that commonly lives on the skin and in the nose of healthy people without causing problems. However, if the bacteria enter the body through a cut or other wound, they can cause a wide range of infections, from mild skin irritations to severe, life-threatening diseases.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col">
+          <div class="card shadow-sm h-100">
+            <img src="https://www.news-medical.net/images/news/ImageForNews_760776_16964284765036193.jpg" class="card-img-top" alt="Lactobacillus">
+            <div class="card-body">
+              <h5 class="card-title">Lactobacillus</h5>
+              <p class="card-text">Lactobacillus is a genus of rod-shaped, Gram-positive bacteria crucial for producing fermented foods and promoting human health. The name comes from its ability to convert sugar, particularly lactose, into lactic acid. Many species of Lactobacillus are considered probiotics, which are beneficial microorganisms that aid in digestion and help maintain a balanced microbiome.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col">
+          <div class="card shadow-sm h-100">
+            <img src="https://media.sciencephoto.com/image/b2380001/800wm" class="card-img-top" alt="Rhizobium">
+            <div class="card-body">
+              <h5 class="card-title">Rhizobium</h5>
+              <p class="card-text">Rhizobium is a genus of Gram-negative soil bacteria known for forming a symbiotic relationship with leguminous plants such as peas, beans, and lentils. This partnership allows for biological nitrogen fixation (BNF), converting atmospheric nitrogen into ammonia, a usable form for plant growth.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  </div>
+  
+
+  <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.card');
+    cards.forEach((card, index) => {
+      setTimeout(() => {
+        if(index % 2 === 0){
+          card.classList.add('animate-left');
+        } else {
+          card.classList.add('animate-right');
+        }
+      }, index * 200);
+    });
+  });
+  </script>
+
+
+{{> footer}}

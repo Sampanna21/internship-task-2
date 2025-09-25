@@ -1,0 +1,37 @@
+ {{> header}}
+
+<div class="fungi-page">
+ <div class="page-bg"></div>
+ 
+ <!-- Hero -->
+  <section class="bg-light text-dark text-center p-5">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Types of Fungi</h1>
+      <p class="lead">Explore common fungi and their roles in nature and human life.</p>
+    </div>
+  </section>
+
+  <!-- Cards -->
+  <section class="py-5">
+    <div class="container">
+      <div class="cards-row">
+        <div class="col"><div class="card shadow-sm h-100"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7ZqXGlp5AORynAc-_WO-0Bt-Z2SwVzb5lRg&s" class="card-img-top" alt="Mushroom"><div class="card-body"><h5 class="card-title">Mushrooms</h5><p class="card-text">Mushrooms are a versatile, nutrient-rich type of fungus prized for their earthy flavor and culinary uses. While many are delicious and safe to eat, others are extremely poisonous, and proper identification is critical.</p></div></div></div>
+        <div class="col"><div class="card shadow-sm h-100"><img src="https://cdn.britannica.com/55/183355-050-769A31D1/Budding-yeast-cells.jpg" class="card-img-top" alt="Yeast"><div class="card-body"><h5 class="card-title">Yeast</h5><p class="card-text">Yeast is a single-celled, eukaryotic microorganism belonging to the fungus kingdom. They are found throughout the natural world and are known for their ability to convert carbohydrates, like sugar and starch, into carbon dioxide and alcohol through a process called fermentation. This ability makes yeast a foundational ingredient in baking, brewing, and various other food and industrial applications.</p></div></div></div>
+        <div class="col"><div class="card shadow-sm h-100"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Mold_on_a_strawberry.jpg" class="card-img-top" alt="Mold"><div class="card-body"><h5 class="card-title">Mold</h5><p class="card-text">Mold is a type of fungus that grows in damp, decaying organic matter and reproduces by releasing microscopic spores. The term can also refer to a hollow container used for shaping a substance or an object formed in such a container.</p></div></div></div>
+        <div class="col"><div class="card shadow-sm h-100"><img src="https://cdn.britannica.com/98/242798-050-6EEE371B/Penicillium-chrysogenum-fungus-SEM-scanning-electon-micrograph.jpg" class="card-img-top" alt="Penicillium"><div class="card-body"><h5 class="card-title">Penicillium</h5><p class="card-text">Penicillium is a large and widespread genus of saprophytic fungi, commonly known as blue or green mold. The genus has significant importance in medicine and food production, but some species can also cause food spoilage and health problems. The name "Penicillium" comes from the Latin word penicillum, or "painter's brush," which refers to the brush-like appearance of its spore-producing structures.</p></div></div></div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const cards = document.querySelectorAll('.card');
+      cards.forEach((card, index) => {
+        setTimeout(() => card.classList.add('animate-up'), index * 200);
+      });
+    });
+  </script>
+  
+
+  {{> footer}}

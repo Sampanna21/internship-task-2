@@ -1,0 +1,80 @@
+{{> header}}
+
+<div class="virus-page">
+    <div class="page-bg"></div>
+
+<!-- Hero -->
+  <section class="bg-light text-dark text-center p-5">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Types of Viruses</h1>
+      <p class="lead">Learn about viruses and their impact on humans, animals, and plants.</p>
+    </div>
+  </section>
+
+  <!-- Cards -->
+  <section class="py-5">
+    <div class="container">
+      <div class="cards-row">
+
+        <div class="col">
+          <div class="card shadow-sm h-100">
+            <img src="https://news.clas.ufl.edu/wp-content/uploads/sites/4/2017/05/AdobeStock_73714707-1-1-scaled.jpeg" class="card-img-top" alt="Influenza Virus">
+            <div class="card-body">
+              <h5 class="card-title">Influenza Virus</h5>
+              <p class="card-text">Influenza, or the flu, is a highly contagious respiratory illness caused by influenza viruses. There are four types—A, B, C, and D—but types A and B are responsible for the seasonal epidemics that occur in humans. Though typically a seasonal infection, it can cause severe illness, especially in high-risk individuals. Flu symptoms typically appear suddenly and are more severe than those of a common cold. They can last for several days to two weeks.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100">
+            <img src="https://www.aidsmap.com/sites/default/files/styles/aidsmap_medium_crop/public/2023-02/hiv-virus-2_0.png?itok=arcGOi9U" class="card-img-top" alt="HIV">
+            <div class="card-body">
+              <h5 class="card-title">HIV</h5>
+              <p class="card-text">The Human Immunodeficiency Virus (HIV) is a virus that attacks the body's immune system by targeting its CD4 cells, a type of white blood cell. Untreated HIV weakens the immune system, making the body more susceptible to infections and certain cancers. When the immune system is severely compromised, the infection can progress to Acquired Immunodeficiency Syndrome (AIDS). </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100">
+            <img src="https://cdn.who.int/media/images/default-source/mca/mca-covid-19/coronavirus-2.tmb-1920v.jpg?sfvrsn=4dba955c_19" class="card-img-top" alt="Coronavirus">
+            <div class="card-body">
+              <h5 class="card-title">Coronavirus</h5>
+              <p class="card-text">A coronavirus is any of a large family of viruses that cause illnesses ranging from the common cold to more severe diseases, including Severe Acute Respiratory Syndrome (SARS), Middle East Respiratory Syndrome (MERS), and Coronavirus Disease 2019 (COVID-19). The name "coronavirus" comes from the crown-like spikes on its surface when viewed under a microscope.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100">
+            <img src="https://news.ki.se/sites/nyheter/files/styles/article_full_width/public/qbank/Ebolavirus_WebStandard780pxwidth%28Drupal%2920231031095027.jpg" class="card-img-top" alt="Ebola Virus">
+            <div class="card-body">
+              <h5 class="card-title">Ebola Virus</h5>
+              <p class="card-text">Ebola virus disease (EVD), formerly known as Ebola hemorrhagic fever, is a rare but severe and often fatal illness in humans. The disease is caused by viruses from the Orthoebolavirus genus, and outbreaks have primarily occurred in tropical regions of sub-Saharan Africa. Ebola virus is a zoonotic disease, meaning it is initially transmitted from wild animals to humans before spreading through human-to-human contact. </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+  <script>
+    // Animate cards sliding alternately from left and right
+    window.addEventListener('DOMContentLoaded', () => {
+      const cards = document.querySelectorAll('.card');
+      cards.forEach((card, index) => {
+        setTimeout(() => {
+          if(index % 2 === 0){
+            card.classList.add('animate-right');
+          } else {
+            card.classList.add('animate-left');
+          }
+        }, index * 200);
+      });
+    });
+  </script>
+
+  {{> footer}}

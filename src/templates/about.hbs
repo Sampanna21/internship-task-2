@@ -1,0 +1,109 @@
+{{> header}}
+
+<div class="about-page">
+    <div class="page-bg"></div>
+
+<!--  Hero Banner -->
+  <section class="bg-light text-dark text-center p-5">
+    <div class="container">
+      <h1 class="display-5 fw-bold">About Microorganism Safari</h1>
+      <p class="lead">Discover how tiny invisible beings make a big difference in our world.</p>
+    </div>
+  </section>
+
+  <!--  Two-Column Layout -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="https://blog.certifiedmtp.com/wp-content/uploads/2024/07/Microscope-Used-Models-Affordable-for-Every-Lab-1200x675.jpg" 
+               alt="Microscope" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6">
+          <h2 class="fw-bold">Why Microorganisms Matter</h2>
+          <p>
+            Microorganisms, often called microbes, are tiny living things that are so small they can only be seen with a microscope. They are everywhere, from the air we breathe and the soil under our feet to the depths of the ocean and even inside our own bodies. This diverse and ancient group of life includes many different types, such as bacteria, fungi (like yeast), viruses, and protozoa.
+          </p>
+          <p>
+           While some microbes, which we might call germs, can make us sick, the vast majority are harmless and incredibly helpful. For example, certain bacteria in our gut help us digest food, while others are essential for turning milk into cheese and yogurt. Microbes also play a vital role in keeping our planet clean by breaking down dead plants and animals and recycling their nutrients. So, while they may be invisible, these tiny organisms are powerful forces that are fundamental to life on Earth.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  Accordion for Groups -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Types of Microorganisms</h2>
+      <div class="accordion" id="microAccordion">
+        <!-- Bacteria -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+              🦠 Bacteria
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#microAccordion">
+            <div class="accordion-body">
+              Bacteria are single-celled organisms found almost everywhere. Some are friendly (yogurt-making), 
+              others harmful (causing infections).
+            </div>
+          </div>
+        </div>
+        <!-- Fungi -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              🍄 Fungi
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#microAccordion">
+            <div class="accordion-body">
+              Fungi include yeasts, molds, and mushrooms. They are decomposers and also used in medicines like antibiotics.
+            </div>
+          </div>
+        </div>
+        <!-- Protozoa -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+              🧬 Protozoa
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#microAccordion">
+            <div class="accordion-body">
+              Protozoa are single-celled eukaryotes that often live in water. Some cause diseases like malaria.
+            </div>
+          </div>
+        </div>
+        <!-- Viruses -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+              🧿 Viruses
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#microAccordion">
+            <div class="accordion-body">
+              Viruses are not truly alive but can infect all forms of life, from humans to bacteria.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  Fun Facts -->
+  <section class="py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">Fun Micro Facts</h2>
+      <span class="badge bg-primary m-2">Some bacteria glow in the dark!</span>
+      <span class="badge bg-success m-2">Your body has more microbes than human cells!</span>
+      <span class="badge bg-warning text-dark m-2">Yeast helps make bread fluffy.</span>
+      <span class="badge bg-danger m-2">Viruses are smaller than bacteria.</span>
+    </div>
+  </section>
+  </div>
+
+  {{> footer}}
