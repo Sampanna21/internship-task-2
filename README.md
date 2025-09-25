@@ -28,5 +28,21 @@
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/Sampanna21/internship-task-2.git
+git clone https://github.com/Sampanna21/microo-organism-safari-task-2.git
+
+2. Navigate to the project folder:
+
+cd micro-organism-safari-task-2
+
+3. Install dependencies:
+
+npm install
+
+4. Start the server:
+
+npm run dev
+
+5. Open your browser at http://localhost:5173
+
+
+
